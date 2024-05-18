@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3",
+    "swiper": "^11.1.3"
+  }
+}
