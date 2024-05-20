@@ -1,0 +1,252 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+  transition: box-shadow 0.4s, background-color 0.4s;
+}
+
+.shadow-header {
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.1);
+}
+
+body.dark-theme .shadow-header {
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.4);
+}
+
+.main {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.dark-theme .card {
+  background-color: var(--container-color);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.dark-theme .card h2 {
+  color: var(--title-color);
+}
+
+.dark-theme .card p {
+  color: var(--text-color);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-image {
+  width: 80%;
+  height: 350px;
+  margin-right: 20px;
+}
+
+.modal-text {
+  max-width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px; 
+}
+
+.modal-text::-webkit-scrollbar {
+  width: 0;
+}
+
+.modal-text h2 {
+  margin-bottom: 10px;
+}
+
+.modal-text p {
+  margin: 5px 0;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.back-button {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-container {
+  margin-top: 75px;
+}
+
+.search-box {
+	border: 2px solid var(--border-color);
+}
+
+body.dark-theme .card {
+  background-color: var(--container-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme .modal-dialog {
+  background-color: var(--container-color);
+  color: var(--text-color);
+}
+
+body.dark-theme .modal-backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+body.dark-theme .close-modal {
+  background: var(--border-color);
+}
+
+body.dark-theme .back-button {
+  background: var(--border-color);
+}
+
+.dark-theme .search-box {
+  background-color: hsla(230, 12%, 8%, 0.6);
+  box-shadow: 0 -8px -32px hsla(0, 0%, 0%, 0.4);
+  border: 2px solid hsl(230, 12%, 18%);
+}
+
+body.dark-theme {
+  --title-color: hsl(230, 48%, 85%);
+  --text-color: hsl(230, 16%, 70%);
+  --border-color: hsl(230, 12%, 18%);
+  --body-color: hsl(230, 12%, 8%);
+  --container-color: hsl(230, 12%, 12%);
+}
+
+.loader-spinner {
+  visibility: visible;
+  border: 8px solid var(--container-color);
+  border-top: 8px solid var(--first-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 100px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    align-items: center;
+  }
+
+  .search-box {
+    width: 200px;
+  }
+
+  .search-button {
+    margin-left: 7px;
+  }
+
+  .modal-image {
+    width: 250px;
+  }
+
+  .modal-text {
+    max-width: 300px;
+  }
+}
+
+.author-link {
+  color: #007BFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.author-link:hover {
+  text-decoration: underline;
+}
