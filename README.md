@@ -1,45 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-BOOK Library README</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>📚 E-BOOK Library</h1>
+
+<h1>📚 E-BOOK Library</h1>
         <p>Welcome to <strong>E-BOOK Library</strong>, a delightful and user-friendly platform for book enthusiasts to explore and discover a vast collection of books with engaging animations and a smooth browsing experience.</p>
 
-        <h2>🌐 Website Overview</h2>
+<h2>🌐 Website Overview</h2>
         <p>E-BOOK Library offers an intuitive interface that makes it easy for users to search and explore a wide range of books. Leveraging the power of the Open Library API, providiing access to millions of books. Whether you're looking for the latest releases, featured books, or details about your favorite authors, E-BOOK Library has got you covered.</p>
 
-        <h2>🚀 Features</h2>
+<h2>🚀 Features</h2>
         <ul>
             <li><strong>API Integration:</strong> We use the <a href="https://openlibrary.org/developers/api" target="_blank">Open Library API</a> to fetch an extensive collection of books.</li>
             <li><strong>Smooth Animations:</strong> Implemented using Swiper CDNs for a dynamic and engaging user experience.</li>
@@ -63,7 +29,7 @@
             <li>And many more to discover as you explore the website.</li>
         </ul>
 
-        <h2>🎨 Screenshots</h2>
+<h2>🎨 Screenshots</h2>
         <p><img src="screenshots\main-page EBOOK.PNG" alt="Home Page">
             <img src="screenshots\new-books EBOOK.PNG" alt="New Books">
             <img src="screenshots\featured-books EBOOK.PNG" alt="Featured Books"> <br>Figure 1: Home Page with New Books and Featured Books sections.
@@ -72,14 +38,14 @@
         <img src="screenshots\search EBOOK.PNG" alt="Book Details"><br>Figure 2: Detailed view of a selected book.</p>
         <p><img src="screenshots\authors EBOOK.PNG" alt="Author Details"><br>Figure 3: Detailed view of an author.</p>
 
-        <h2>🛠️ Technologies Used</h2>
+<h2>🛠️ Technologies Used</h2>
         <ul>
             <li><strong>API:</strong> <a href="https://openlibrary.org/developers/api" target="_blank">Open Library API</a></li>
             <li><strong>Animations:</strong> Swiper CDNs</li>
             <li><strong>Styling:</strong> CSS and TailwindCSS</li>
         </ul>
 
-        <h2>🚧 Future Enhancements</h2>
+<h2>🚧 Future Enhancements</h2>
         <ul>
             <li>Full transition to TailwindCSS for more efficient and responsive design.</li>
             <li>Adding user authentication and personalized book recommendations.</li>
@@ -89,7 +55,7 @@
             <li>Implementing the "Shop Now" button functionality.</li>
         </ul>
 
-        <h2>📂 Project Structure</h2>
+<h2>📂 Project Structure</h2>
         <pre>
 
   /src
@@ -104,7 +70,7 @@
   index.html
   </pre>
 
-          <h2>👋 Conclusion</h2>
+  <h2>👋 Conclusion</h2>
           <p>E-BOOK Library aims to provide a seamless and enjoyable experience for book lovers everywhere. With continuous improvements and updates, we hope to become your go-to platform for all your reading needs.</p>
           <p>Thank you for exploring E-BOOK Library. Happy reading! 📖✨</p>
       </div>
