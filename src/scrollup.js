@@ -1,9 +1,11 @@
 function scrollup() {
   const scrollUp = () => {
-    const scrollUp = document.getElementById('scroll-up');
-    window.scrollY > 350
-      ? scrollUp.classList.add('show-scroll')
-      : scrollUp.classList.remove('show-scroll');
+    const scrollUpElement = document.getElementById('scroll-up');
+    if (scrollUpElement) {
+      window.scrollY > 350
+        ? scrollUpElement.classList.add('show-scroll')
+        : scrollUpElement.classList.remove('show-scroll');
+    }
   };
   window.addEventListener('scroll', scrollUp);
 
@@ -20,10 +22,15 @@ function scrollup() {
           '.nav__menu a[href*=' + sectionId + ']'
         );
 
-      if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
-        sectionsClass.classList.add('active-link');
-      } else {
-        sectionsClass.classList.remove('active-link');
+      if (sectionsClass) {
+        if (
+          scrollDown > sectionTop &&
+          scrollDown <= sectionTop + sectionHeight
+        ) {
+          sectionsClass.classList.add('active-link');
+        } else {
+          sectionsClass.classList.remove('active-link');
+        }
       }
     });
   };
@@ -38,11 +45,13 @@ function scrollup() {
     // reset: true,
   });
 
-  sr.reveal(`.home__data, .featured__container, .new__container, .join__data, .testimonial__container, .footer`);
-  sr.reveal(`.home__images`, {delay: 600});
-  sr.reveal(`.services__card`, {delay: 500});
-  sr.reveal(`.discount__data`, {origin: 'left'});
-  sr.reveal(`.discount__images`, {origin: 'right'});
+  sr.reveal(
+    `.home__data, .featured__container, .new__container, .join__data, .testimonial__container, .footer`
+  );
+  sr.reveal(`.home__images`, { interval: 600 });
+  sr.reveal(`.services__card`, { delay: 500 });
+  sr.reveal(`.discount__data`, { origin: 'left' });
+  sr.reveal(`.discount__images`, { origin: 'right' });
 }
 
 export default scrollup;

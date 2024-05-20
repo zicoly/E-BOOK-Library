@@ -18,20 +18,20 @@ function menu() {
 
   // LOGIN
   const loginButton = document.getElementById('login-button'),
-  loginClose = document.getElementById('login-close'),
-  loginContent = document.getElementById('login-content');
+    loginClose = document.getElementById('login-close'),
+    loginContent = document.getElementById('login-content');
 
-if (loginButton) {
-  loginButton.addEventListener('click', () => {
-    loginContent.classList.add('show-login');
-  });
-}
+  if (loginButton) {
+    loginButton.addEventListener('click', () => {
+      loginContent.classList.add('show-login');
+    });
+  }
 
-if (loginClose) {
-  loginClose.addEventListener('click', () => {
-    loginContent.classList.remove('show-login');
-  });
-}
+  if (loginClose) {
+    loginClose.addEventListener('click', () => {
+      loginContent.classList.remove('show-login');
+    });
+  }
 }
 
 export default menu;

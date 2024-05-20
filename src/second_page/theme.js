@@ -1,4 +1,4 @@
-function dark_light() {
+function theme() {
   const themeButton = document.getElementById('theme-button');
   const darkTheme = 'dark-theme';
   const iconThemeMoon = 'bi-moon';
@@ -7,13 +7,23 @@ function dark_light() {
   const selectedTheme = localStorage.getItem('selected-theme');
   const selectedIcon = localStorage.getItem('selected-icon');
 
-  const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
-  const getCurrentIcon = () => themeButton.classList.contains(iconThemeMoon) ? iconThemeMoon : iconThemeSun;
+  const getCurrentTheme = () =>
+    document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+  const getCurrentIcon = () =>
+    themeButton.classList.contains(iconThemeMoon)
+      ? iconThemeMoon
+      : iconThemeSun;
 
   if (selectedTheme) {
-    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
-    themeButton.classList[selectedIcon === iconThemeMoon ? 'add' : 'remove'](iconThemeMoon);
-    themeButton.classList[selectedIcon === iconThemeSun ? 'add' : 'remove'](iconThemeSun);
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](
+      darkTheme
+    );
+    themeButton.classList[selectedIcon === iconThemeMoon ? 'add' : 'remove'](
+      iconThemeMoon
+    );
+    themeButton.classList[selectedIcon === iconThemeSun ? 'add' : 'remove'](
+      iconThemeSun
+    );
   } else {
     themeButton.classList.add(iconThemeMoon);
   }
@@ -30,6 +40,6 @@ function dark_light() {
     localStorage.setItem('selected-theme', getCurrentTheme());
     localStorage.setItem('selected-icon', getCurrentIcon());
   });
-}
+};
 
-export default dark_light;
+theme();

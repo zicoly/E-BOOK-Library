@@ -1,1023 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="output.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-	<title>E-BOOK</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <title>E-BOOK</title>
 </head>
+
+</style>
 
 <body>
 
-	<header class="header" id="header">
-		<nav class="nav container">
-			<a href="#" class="nav__logo">
-				<i class="bi bi-journal-bookmark"></i> E-Book
-			</a>
-
-			<div class="nav__menu">
-				<ul class="nav__list">
-					<li class="nav__item">
-						<a href="#home" class="nav__link active-link">
-							<i class="bi bi-house"></i>
-							<span>Home</span>
-						</a>
-					</li>
-					<li class="nav__item">
-						<a href="#featured" class="nav__link">
-							<i class="bi bi-journals"></i>
-							<span>Featured</span>
-						</a>
-					</li>
-					<li class="nav__item">
-						<a href="#discount" class="nav__link">
-							<i class="bi bi-tag"></i>
-							<span>Discount</span>
-						</a>
-					</li>
-					<li class="nav__item">
-						<a href="#new" class="nav__link">
-							<i class="bi bi-bookmark"></i>
-							<span>New Books</span>
-						</a>
-					</li>
-					<li class="nav__item">
-						<a href="#testimonial" class="nav__link">
-							<i class="bi bi-chat-right-text"></i>
-							<span>Testimonial</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="nav__actions">
-				<i class="bi bi-search search-button" id="search-button"></i>
-				<i class="bi bi-person login-button" id="login-button"></i>
-				<i class="bi bi-moon change-theme" id="theme-button"></i>
-			</div>
-		</nav>
-	</header>
-
-	<div class="search" id="search-content">
-		<form action="" class="search__form">
-			<i class="bi bi-search search__icon"></i>
-			<input type="search" placeholder="What are you looking for?" class="search__input">
-		</form>
-
-		<i class="bi bi-x-lg search__close" id="search-close"></i>
-	</div>
-
-	<div class="login grid" id="login-content">
-		<form action="" class="login__form grid">
-			<h3 class="login__title">Log In</h3>
-
-			<div class="login__group grid">
-				<div>
-					<label for="login-email" class="login__label">Email</label>
-					<input type="email" placeholder="Enter your email" id="login-email" class="login__input">
-				</div>
-
-				<div>
-					<label for="login-password" class="login__label">Password</label>
-					<input type="password" placeholder="Enter your password" id="login-password" class="login__input">
-				</div>
-			</div>
-
-			<div>
-				<span class="login__signup">
-					You don't have an account? <a href="#">Sign up</a>
-				</span>
-
-				<a href="#" class="login__forgot">Forgot password</a>
-
-				<button type="submit" class="login__button button">Log In</butto>
-			</div>
-		</form>
-
-		<i class="bi bi-x-lg login__close" id="login-close"></i>
-	</div>
-
-	<main class="main">
-		<section class="home section" id="home">
-			<div class="home__container container grid">
-				<div class="home__data">
-					<h1 class="home__title">
-						Browse & <br>
-						Select E-Books
-					</h1>
-
-					<p class="home__description">
-						Find the best e-books from your favorite
-						writers, and embark on a journey through
-						captivating stories and insightful knowledge.
-						Discover the digital library of your dreams, tailored to your interests and passions.
-					</p>
-
-					<a href="#" class="button">Explore Now</a>
-				</div>
-
-				<div class="home__images">
-					<div class="home__swiper swiper">
-						<div class="swiper-wrapper">
-							<article class="home__article swiper-slide">
-								<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="home__img">
-							</article>
-
-							<article class="home__article swiper-slide">
-								<img src="images/gift of fire.jpg" alt="image" class="home__img">
-							</article>
-
-							<article class="home__article swiper-slide">
-								<img src="images/last of us.jpg" alt="image" class="home__img">
-							</article>
-
-							<article class="home__article swiper-slide">
-								<img src="images/gift of fire.jpg" alt="image" class="home__img">
-							</article>
-
-							<article class="home__article swiper-slide">
-								<img src="images/last of us.jpg" alt="image" class="home__img">
-							</article>
-
-							<article class="home__article swiper-slide">
-								<img src="images/gift of fire.jpg" alt="image" class="home__img">
-							</article>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="services section">
-			<div class="services__container container grid">
-				<article class="services__card">
-					<i class="bi bi-truck"></i>
-					<h3 class="services__title">Free Shipping</h3>
-					<p class="services__description">Order More Than $100</p>
-				</article>
-
-				<article class="services__card">
-					<i class="bi bi-shield-lock"></i>
-					<h3 class="services__title">Secure Payment</h3>
-					<p class="services__description">100% Secure Payment</p>
-				</article>
-
-				<article class="services__card">
-					<i class="bi bi-headset"></i>
-					<h3 class="services__title">24/7 Support</h3>
-					<p class="services__description">Call us anytime</p>
-				</article>
-			</div>
-		</section>
-
-		<section class="featured section" id="featured">
-			<h2 class="section__title">
-				Featured Books
-			</h2>
-
-			<div class="featured__container container">
-				<div class="featured__swiper swiper">
-					<div class="swiper-wrapper">
-						<!-- ============ BOKKS =========== -->
-						<article class="featured__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="featured__img">
-
-							<h2 class="featured__title">Featured Book</h2>
-							<div class="featured__prices">
-								<span class="featured__discount">$11.99</span>
-								<span class="featured__price">$19.99</span>
-							</div>
-
-							<button class="button">Add to Cart</button>
-
-							<div class="featured__actions">
-								<button><i class="bi bi-search"></i></button>
-								<button><i class="bi bi-heart"></i></button>
-								<button><i class="bi bi-eye"></i></button>
-							</div>
-						</article>
-
-						<article class="featured__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="featured__img">
-
-							<h2 class="featured__title">Featured Book</h2>
-							<div class="featured__prices">
-								<span class="featured__discount">$11.99</span>
-								<span class="featured__price">$19.99</span>
-							</div>
-
-							<button class="button">Add to Cart</button>
-
-							<div class="featured__actions">
-								<button><i class="bi bi-search"></i></button>
-								<button><i class="bi bi-heart"></i></button>
-								<button><i class="bi bi-eye"></i></button>
-							</div>
-						</article>
-
-						<article class="featured__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="featured__img">
-
-							<h2 class="featured__title">Featured Book</h2>
-							<div class="featured__prices">
-								<span class="featured__discount">$11.99</span>
-								<span class="featured__price">$19.99</span>
-							</div>
-
-							<button class="button">Add to Cart</button>
-
-							<div class="featured__actions">
-								<button><i class="bi bi-search"></i></button>
-								<button><i class="bi bi-heart"></i></button>
-								<button><i class="bi bi-eye"></i></button>
-							</div>
-						</article>
-
-						<article class="featured__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="featured__img">
-
-							<h2 class="featured__title">Featured Book</h2>
-							<div class="featured__prices">
-								<span class="featured__discount">$11.99</span>
-								<span class="featured__price">$19.99</span>
-							</div>
-
-							<button class="button">Add to Cart</button>
-
-							<div class="featured__actions">
-								<button><i class="bi bi-search"></i></button>
-								<button><i class="bi bi-heart"></i></button>
-								<button><i class="bi bi-eye"></i></button>
-							</div>
-						</article>
-
-						<article class="featured__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="featured__img">
-
-							<h2 class="featured__title">Featured Book</h2>
-							<div class="featured__prices">
-								<span class="featured__discount">$11.99</span>
-								<span class="featured__price">$19.99</span>
-							</div>
-
-							<button class="button">Add to Cart</button>
-
-							<div class="featured__actions">
-								<button><i class="bi bi-search"></i></button>
-								<button><i class="bi bi-heart"></i></button>
-								<button><i class="bi bi-eye"></i></button>
-							</div>
-						</article>
-
-						<article class="featured__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="featured__img">
-
-							<h2 class="featured__title">Featured Book</h2>
-							<div class="featured__prices">
-								<span class="featured__discount">$11.99</span>
-								<span class="featured__price">$19.99</span>
-							</div>
-
-							<button class="button">Add to Cart</button>
-
-							<div class="featured__actions">
-								<button><i class="bi bi-search"></i></button>
-								<button><i class="bi bi-heart"></i></button>
-								<button><i class="bi bi-eye"></i></button>
-							</div>
-						</article>
-
-						<article class="featured__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="featured__img">
-
-							<h2 class="featured__title">Featured Book</h2>
-							<div class="featured__prices">
-								<span class="featured__discount">$11.99</span>
-								<span class="featured__price">$19.99</span>
-							</div>
-
-							<button class="button">Add to Cart</button>
-
-							<div class="featured__actions">
-								<button><i class="bi bi-search"></i></button>
-								<button><i class="bi bi-heart"></i></button>
-								<button><i class="bi bi-eye"></i></button>
-							</div>
-						</article>
-
-						<article class="featured__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="featured__img">
-
-							<h2 class="featured__title">Featured Book</h2>
-							<div class="featured__prices">
-								<span class="featured__discount">$11.99</span>
-								<span class="featured__price">$19.99</span>
-							</div>
-
-							<button class="button">Add to Cart</button>
-
-							<div class="featured__actions">
-								<button><i class="bi bi-search"></i></button>
-								<button><i class="bi bi-heart"></i></button>
-								<button><i class="bi bi-eye"></i></button>
-							</div>
-						</article>
-
-						<article class="featured__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="featured__img">
-
-							<h2 class="featured__title">Featured Book</h2>
-							<div class="featured__prices">
-								<span class="featured__discount">$11.99</span>
-								<span class="featured__price">$19.99</span>
-							</div>
-
-							<button class="button">Add to Cart</button>
-
-							<div class="featured__actions">
-								<button><i class="bi bi-search"></i></button>
-								<button><i class="bi bi-heart"></i></button>
-								<button><i class="bi bi-eye"></i></button>
-							</div>
-						</article>
-
-						<article class="featured__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="featured__img">
-
-							<h2 class="featured__title">Featured Book</h2>
-							<div class="featured__prices">
-								<span class="featured__discount">$11.99</span>
-								<span class="featured__price">$19.99</span>
-							</div>
-
-							<button class="button">Add to Cart</button>
-
-							<div class="featured__actions">
-								<button><i class="bi bi-search"></i></button>
-								<button><i class="bi bi-heart"></i></button>
-								<button><i class="bi bi-eye"></i></button>
-							</div>
-						</article>
-					</div>
-
-					<div class="swiper-button-prev">
-						<i class="bi bi-chevron-left"></i>
-					</div>
-
-					<div class="swiper-button-next">
-						<i class="bi bi-chevron-right"></i>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="discount section" id="discount">
-			<div class="discount__container container grid">
-				<div class="discount__data">
-					<h2 class="discount__title section__title">
-						up to 50% Discount
-					</h2>
-
-					<p class="discount__description">
-						Take advantage of the discount days we have for you, buy book from your favorite writers, the more you buy,
-						the more discount we have for you.
-					</p>
-
-					<a href="#" class="button">Shop Now</a>
-				</div>
-
-				<div class="discount__images">
-					<img src="images/gift of fire.jpg" alt="image" class="discount__img-1">
-					<img src="images/last of us.jpg" alt="image" class="discount__img-2">
-				</div>
-			</div>
-		</section>
-
-		<section class="new section" id="new">
-			<h2 class="section__title">
-				New Books
-			</h2>
-
-			<div class="new__container container">
-				<div class="new__swiper swiper">
-					<div class="swiper-wrapper">
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/last of us.jpg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/last of us.jpg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/last of us.jpg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/last of us.jpg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/last of us.jpg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/last of us.jpg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/last of us.jpg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/last of us.jpg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/last of us.jpg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/last of us.jpg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-					</div>
-				</div>
-
-				<div class="new__swiper swiper">
-					<div class="swiper-wrapper">
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="#" class="new__card swiper-slide">
-							<img src="images/Daughter-of-Man-book-cover-scaled-1.jpeg" alt="image" class="new__img">
-
-							<div>
-								<h2 class="new__title">New Book</h2>
-								<div class="new__prices">
-									<span class="new__discount">$7.99</span>
-									<span class="new__price">$14.99</span>
-								</div>
-
-								<div class="new__stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-half"></i>
-								</div>
-							</div>
-						</a>
-
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="join section">
-			<div class="join__container">
-				<img src="images/subscribee.png" alt="image" class="join__bg">
-
-				<div class="join__data container grid">
-					<h2 class="join__title section__title">
-						Subscribe To Receive <br>
-						The Latest Updates
-					</h2>
-
-					<form action="" class="join__form">
-						<input type="email" placeholder="Enter email" class="join__input">
-						<button type="submit" class="join__button button">Subscribe</button>
-					</form>
-				</div>
-			</div>
-		</section>
-
-		<section class="testimonial section" id="testimonial">
-			<h2 class="section__title">
-				Customer Opinions
-			</h2>
-
-			<div class="testimonial__container container">
-				<div class="testimonial__swiper swiper">
-					<div class="swiper-wrapper">
-						<article class="testimonial__card swiper-slide">
-							<img src="images/testimonial.jfif" alt="image" class="testimonial__img">
-
-							<h2 class="testimonial__title">Rial Loz</h2>
-							<p class="testimonial__description">
-								The best website to buy books, the purchase is very easy to make and has great discounts.
-							</p>
-
-							<div class="testimonial__stars">
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-half"></i>
-							</div>
-						</article>
-						<article class="testimonial__card swiper-slide">
-							<img src="images/testimonial.jfif" alt="image" class="testimonial__img">
-
-							<h2 class="testimonial__title">Rial Loz</h2>
-							<p class="testimonial__description">
-								The best website to buy books, the purchase is very easy to make and has great discounts.
-							</p>
-
-							<div class="testimonial__stars">
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-half"></i>
-							</div>
-						</article>
-						<article class="testimonial__card swiper-slide">
-							<img src="images/testimonial.jfif" alt="image" class="testimonial__img">
-
-							<h2 class="testimonial__title">Rial Loz</h2>
-							<p class="testimonial__description">
-								The best website to buy books, the purchase is very easy to make and has great discounts.
-							</p>
-
-							<div class="testimonial__stars">
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-half"></i>
-							</div>
-						</article>
-						<article class="testimonial__card swiper-slide">
-							<img src="images/testimonial.jfif" alt="image" class="testimonial__img">
-
-							<h2 class="testimonial__title">Rial Loz</h2>
-							<p class="testimonial__description">
-								The best website to buy books, the purchase is very easy to make and has great discounts.
-							</p>
-
-							<div class="testimonial__stars">
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-half"></i>
-							</div>
-						</article>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<footer class="footer">
-		<div class="footer__container container grid">
-			<div>
-				<a href="#" class="footer__logo">
-					<i class="bi bi-journal-bookmark"></i> E-Book
-				</a>
-
-				<p class="footer__description">
-					Find and explore the best <br>
-					eBooks from all your <br>
-					favorite writers.
-				</p>
-			</div>
-
-			<div class="footer__data grid">
-				<div>
-					<h3 class="footer__title">About</h3>
-						<ul class="footer__links">
-							<li>
-								<a href="#" class="footer__link">Awards</a>
-							</li>
-
-							<li>
-								<a href="#" class="footer__link">FAQs</a>
-							</li>
-
-							<li>
-								<a href="#" class="footer__link">Privacy policy</a>
-							</li>
-							
-							<li>
-								<a href="#" class="footer__link">Terms of services</a>
-							</li>
-						</ul>
-				</div>
-
-				<div>
-					<h3 class="footer__title">Company</h3>
-
-						<ul class="footer__links">
-							<li>
-								<a href="#" class="footer__link">Blogs</a>
-							</li>
-
-							<li>
-								<a href="#" class="footer__link">Community</a>
-							</li>
-
-							<li>
-								<a href="#" class="footer__link">Our team</a>
-							</li>
-
-							<li>
-								<a href="#" class="footer__link">Help center</a>
-							</li>
-						</ul>
-				</div>
-
-				<div>
-					<h3 class="footer__title">Contact</h3>
-
-						<ul class="footer__links">
-							<li>
-								<address class="footer__info">
-									Lcu. University <br>
-									Gate 4321, IB
-								</address>
-							</li>
-							<li>
-								<address class="footer__info">
-									omojolazion@gmail.com <br>
-									0987-654-321
-								</address>
-							</li>
-						</ul>
-				</div>
-
-				<div>
-					<h3 class="footer__title">Social</h3>
-
-						<div class="footer__social">
-							<a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-								<i class="bi bi-facebook"></i>
-							</a>
-
-							<a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-								<i class="bi bi-instagram"></i>
-							</a>
-
-							<a href="https://www.twitter.com" target="_blank" class="footer__social-link">
-								<i class="bi bi-twitter-x"></i>
-							</a>
-						</div>
-				</div>
-			</div>
-		</div>
-
-		<span class="footer__copy">
-			&#169; All Rights Reserved By Zicoly
-		</span>
-	</footer>
-
-	<a href="#" class="scrollup" id="scroll-up">
-		<i class="bi bi-arrow-up"></i>
-	</a>
-
-	<script src="scrollreveal.min.js"></script>
-	<script type="module" src="main.js"></script>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <i class="bi bi-journal-bookmark"></i> E-Book
+      </a>
+
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="bi bi-house"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#featured" class="nav__link">
+              <i class="bi bi-journals"></i>
+              <span>Featured</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#discount" class="nav__link">
+              <i class="bi bi-tag"></i>
+              <span>Discount</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#new" class="nav__link">
+              <i class="bi bi-bookmark"></i>
+              <span>New Books</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#testimonial" class="nav__link">
+              <i class="bi bi-chat-right-text"></i>
+              <span>Authors</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__actions">
+        <i class="bi bi-search search-button" id="search-button"></i>
+        <i class="bi bi-person login-button" id="login-button"></i>
+        <i class="bi bi-moon change-theme" id="theme-button"></i>
+      </div>
+    </nav>
+  </header>
+
+  <div class="search" id="search-content">
+    <form action="" class="search__form" id="search-form">
+      <i class="bi bi-search search__icon"></i>
+      <input type="search" placeholder="What are you looking for?" class="search__input" id="search-input">
+    </form>
+
+    <i class="bi bi-x-lg search__close" id="search-close"></i>
+
+    <div class="loading-spinner" id="loading-spinner"></div>
+
+    <section class="search-results" id="search-results">
+      <h2>Search Results</h2>
+      <ul id="search-results-list"></ul>
+    </section>
+  </div>
+
+  <div class="login grid" id="login-content">
+    <form action="" class="login__form grid">
+      <h3 class="login__title">Log In</h3>
+
+      <div class="login__group grid">
+        <div>
+          <label for="login-email" class="login__label">Email</label>
+          <input type="email" placeholder="Enter your email" id="login-email" class="login__input">
+        </div>
+
+        <div>
+          <label for="login-password" class="login__label">Password</label>
+          <input type="password" placeholder="Enter your password" id="login-password" class="login__input">
+        </div>
+      </div>
+
+      <div>
+        <span class="login__signup">
+          You don't have an account? <a href="#">Sign up</a>
+        </span>
+
+        <a href="#" class="login__forgot">Forgot password</a>
+
+        <button type="submit" class="login__button button">Log In</butto>
+      </div>
+    </form>
+
+    <i class="bi bi-x-lg login__close" id="login-close"></i>
+  </div>
+
+  <main class="main">
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__data">
+          <h1 class="home__title">
+            Browse & <br>
+            Select E-Books
+          </h1>
+
+          <p class="home__description">
+            Find the best e-books from your favorite
+            writers, and embark on a journey through
+            captivating stories and insightful knowledge.
+            Discover the digital library of your dreams, tailored to your interests and passions.
+          </p>
+
+          <a href="second_page/IndexSearch.html" class="button">Explore Now</a>
+        </div>
+
+        <div class="home__images">
+          <div class="home__swiper swiper">
+            <div class="swiper-wrapper" id="swiper-wrapper">
+
+              <!-- ========== BOOK COVERS ========== -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="services__container container grid">
+        <article class="services__card">
+          <i class="bi bi-truck"></i>
+          <h3 class="services__title">Free Shipping</h3>
+          <p class="services__description">Order More Than $100</p>
+        </article>
+
+        <article class="services__card">
+          <i class="bi bi-shield-lock"></i>
+          <h3 class="services__title">Secure Payment</h3>
+          <p class="services__description">100% Secure Payment</p>
+        </article>
+
+        <article class="services__card">
+          <i class="bi bi-headset"></i>
+          <h3 class="services__title">24/7 Support</h3>
+          <p class="services__description">Call us anytime</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="featured section" id="featured">
+      <h2 class="section__title">
+        Featured Books
+      </h2>
+
+      <div class="featured__container container">
+        <div class="featured__swiper swiper">
+          <div class="swiper-wrapper" id="featured-swiper-wrapper">
+
+            <!-- ========== FEATURED BOKKS ========== -->
+
+          </div>
+
+          <div class="swiper-button-prev">
+            <i class="bi bi-chevron-left"></i>
+          </div>
+
+          <div class="swiper-button-next">
+            <i class="bi bi-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="discount section" id="discount">
+      <div class="discount__container container grid">
+        <div class="discount__data">
+          <h2 class="discount__title section__title">
+            up to 50% Discount
+          </h2>
+
+          <p class="discount__description">
+            Take advantage of the discount days we have for you, buy book from your favorite writers, the more you buy,
+            the more discount we have for you.
+          </p>
+
+          <a href="#" class="button">Shop Now</a>
+        </div>
+
+        <div class="discount__images" id="discount__images">
+          <img src="https://covers.openlibrary.org/b/id/8231830-L.jpg" alt="image" class="discount__img-1">
+          <img src="https://covers.openlibrary.org/b/id/8231825-L.jpg" alt="image" class="discount__img-2">
+        </div>
+      </div>
+    </section>
+
+    <section class="new section" id="new">
+      <h2 class="section__title">
+        New Books
+      </h2>
+
+      <div class="new__container container">
+        <div class="new__swiper swiper">
+          <div class="swiper-wrapper" id="new-books-wrapper-1">
+
+            <!-- ========== NEW BOOK COVERS ========== -->
+
+          </div>
+        </div>
+
+        <div class="new__swiper swiper">
+          <div class="swiper-wrapper" id="new-books-wrapper-2">
+
+            <!-- ========== NEW BOOK COVERS ========== -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="join section" id="join">
+      <div class="join__container">
+        <img src="images/subscribee.png" alt="image" class="join__bg">
+
+        <div class="join__data container grid">
+          <h2 class="join__title section__title">
+            Subscribe To Receive <br>
+            The Latest Updates
+          </h2>
+
+          <form action="" class="join__form">
+            <input type="email" placeholder="Enter email" class="join__input">
+            <button type="submit" class="join__button button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial section" id="testimonial">
+      <h2 class="section__title">
+        About Authors
+      </h2>
+
+      <div class="testimonial__container container">
+        <div class="testimonial__swiper swiper">
+          <div class="swiper-wrapper" id="authors-wrapper">
+
+            <!-- ========== ABOUT AUTHORS ========== -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container grid">
+      <div>
+        <a href="#" class="footer__logo">
+          <i class="bi bi-journal-bookmark"></i> E-Book
+        </a>
+
+        <p class="footer__description">
+          Find and explore the best <br>
+          eBooks from all your <br>
+          favorite writers.
+        </p>
+      </div>
+
+      <div class="footer__data grid">
+        <div>
+          <h3 class="footer__title">About</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Awards</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link">FAQs</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link">Privacy policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link">Terms of services</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Company</h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Blogs</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link">Community</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link">Our team</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer__link">Help center</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Contact</h3>
+
+          <ul class="footer__links">
+            <li>
+              <address class="footer__info">
+                Lcu. University <br>
+                Gate 4321, IB
+              </address>
+            </li>
+            <li>
+              <address class="footer__info">
+                omojolazion@gmail.com <br>
+                0987-654-321
+              </address>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Social</h3>
+
+          <div class="footer__social">
+            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+              <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="https://www.twitter.com" target="_blank" class="footer__social-link">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <span class="footer__copy">
+      &#169; All Rights Reserved By Zicoly
+    </span>
+  </footer>
+
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <script src="scrollreveal.min.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 
 </html>
